@@ -1,8 +1,8 @@
 //
 // //
 // // // SET ME FROM THE CLIENT PACK
-const CLIENT_ID = 'https://rp.sandbox.directory.openfinance.ae/openid_relying_party/0fa29f27-38a0-4efb-8117-c022bfa57af1';
-const SIGNING_KEY_ID = 'V93XKP4IkvIGqUjsDJI_WIpowSZV22UlSNZp9uWk2Uo';
+const CLIENT_ID = 'https://rp.sandbox.directory.openfinance.ae/openid_relying_party/7039a1c5-67e4-4452-9d51-9cae79df8c4a';
+const SIGNING_KEY_ID = 'S9N-zyEr922lNDNGceOQTnTBG1KAQyNX9pZHEKLaZhg';
 // // //
 // //
 //
@@ -12,7 +12,7 @@ export default {
   CLIENT_ID,
   SIGNING_KEY_ID,
 
-  REDIRECT_URI: 'http://localhost:1411/client/callback',
+  REDIRECT_URI: 'https://ob-testing.onrender.com/callback',
   RESOURCE_SERVER: 'https://rs1.altareq1.sandbox.apihub.openfinance.ae',
   ISSUER: 'https://auth1.altareq1.sandbox.apihub.openfinance.ae',
   AUTH_ENDPOINT: 'https://auth1.altareq1.sandbox.apihub.openfinance.ae/auth',
