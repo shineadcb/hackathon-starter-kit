@@ -122,10 +122,16 @@ router.post('/single-payment', async (req, res) => {
 
     const nonce = uuidv4()
 
+
     const codeVerifier = uuidv4() + uuidv4();
+
+    console.log(codeVerifier)
+
 
     const hashedCodeVerifier = CryptoJS.SHA256(codeVerifier);
     let codeChallenge = CryptoJS.enc.Base64.stringify(hashedCodeVerifier);
+
+   
 
 
     codeChallenge = codeChallenge.replaceAll('+', '-');
@@ -136,6 +142,9 @@ router.post('/single-payment', async (req, res) => {
         code_verifier: codeVerifier,
         consent_id: consentId
     };
+
+    console.log(codeVerifier)
+    console.log(codeChallenge)
 
     const state = btoa(JSON.stringify(stateData));
 
